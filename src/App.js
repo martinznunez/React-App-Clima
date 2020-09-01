@@ -22,16 +22,12 @@ function App() {
       setSpinners(true);
 
       const coordenadas = async () => {
-        const appid = "key";
-
         try {
           const url = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${appid}`
+            `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_API_KEY}`
           );
 
           const data = await url.json();
-
-          // setSearchError(false);
 
           if (data.cod == 404) {
             setSearchError(true);
@@ -60,11 +56,10 @@ function App() {
         return;
       }
 
-      const appid = "key";
       setSpinners(true);
       try {
         const url = await fetch(
-          `https://api.openweathermap.org/data/2.5/weather?q=${consultCity}&appid=${appid}`
+          `https://api.openweathermap.org/data/2.5/weather?q=${consultCity}&appid=${process.env.REACT_APP_API_KEY}`
         );
 
         const data = await url.json();
