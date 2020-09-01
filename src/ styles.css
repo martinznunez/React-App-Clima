@@ -1,0 +1,97 @@
+body {
+  background-color: #34495e;
+}
+
+.fondo {
+  background: url(./imagenes/despejado.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.fondo-clouds {
+  background: url(./imagenes/fondo-nubes.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.fondo-rain {
+  background: url(./imagenes/fondo-lluvia.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  padding-top: 100px;
+}
+
+.from-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.btn {
+  text-align: center;
+  width: 100px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+
+#input {
+  width: 300px;
+}
+
+.alert {
+  margin-top: 20px;
+  text-align: center;
+}
+.cities {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.container-city {
+  color: #ffffff;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-city h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.container-city h6 {
+  font-size: 25px;
+  /* margin-bottom: 20px; */
+}
+.temp-max-min {
+  display: flex;
+  margin: 10px;
+}
+.temp-max-min p {
+  margin: 10px;
+}
+
+#spinner {
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+}
+
+@media (max-width: 500px) {
+  .title h1 {
+    font-size: 30px;
+  }
+}
